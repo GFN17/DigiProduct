@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk • DigitalStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background dengan gunung sunset dan awan bergerak -->
+    <div class="background-container">
+        <div class="sky"></div>
+        <div class="sun"></div>
+        
+        <!-- Elemen untuk tema dark -->
+        <div class="moon"></div>
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+        
+        <div class="clouds">
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
+            <div class="cloud cloud4"></div>
+        </div>
+        <div class="mountains"></div>
+        
+        <!-- Rocket Background Elements - DIPERBAIKI -->
+        <div class="rocket-background">
+            <div class="rocket">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <div class="smoke-container">
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+            </div>
+        </div>
+        
+        <div class="rocket-background">
+            <div class="rocket">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <div class="smoke-container">
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">Digital<span>Store</span></a>
+            <a class="btn small ghost" href="index.html" id="backButton"><i class="fas fa-arrow-left"></i> Kembali</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail-section">
+            <div class="container product-detail">
+                <div class="preview-wrap enter-from-left">
+                    <img id="productImage" src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Preview produk">
+                </div>
+
+                <div class="info-wrap enter-from-right">
+                    <h1 id="productTitle">Memuat Produk...</h1>
+                    <p id="productCategory" class="muted">Kategori</p>
+                    <p id="productDescription">Deskripsi produk sedang dimuat.</p>
+
+                    <div class="meta">
+                        <div class="price" id="productPrice">Rp 0</div>
+                        <div class="tags" id="productTags"></div>
+                    </div>
+
+                    <div class="actions">
+                        <a id="buyBtn" class="btn primary" target="_blank" rel="noopener"><i class="fas fa-shopping-cart"></i> Beli via Lynk.id</a>
+                        <button id="previewDemo" class="btn ghost"><i class="fas fa-eye"></i> Lihat Demo</button>
+                    </div>
+
+                    <div id="demoArea" class="demo-area" hidden>
+                        <!-- Area demo akan diisi oleh JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>© <span id="year2"></span> DigitalStore. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

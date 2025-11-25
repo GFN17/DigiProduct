@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalStore • Produk Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background dengan gunung sunset dan awan bergerak -->
+    <div class="background-container">
+        <div class="sky"></div>
+        <div class="sun"></div>
+        
+        <!-- Elemen untuk tema dark -->
+        <div class="moon"></div>
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+        
+        <div class="clouds">
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
+            <div class="cloud cloud4"></div>
+        </div>
+        <div class="mountains"></div>
+        
+        <!-- Rocket Background Elements - DIPERBAIKI -->
+        <div class="rocket-background">
+            <div class="rocket">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <div class="smoke-container">
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+            </div>
+        </div>
+        
+        <div class="rocket-background">
+            <div class="rocket">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <div class="smoke-container">
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+            </div>
+        </div>
+        
+        <div class="rocket-background">
+            <div class="rocket">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <div class="smoke-container">
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+                <div class="smoke"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">Digital<span>Store</span></a>
+
+            <div class="controls">
+                <div class="theme-toggle" id="themeToggle" title="Ganti Tema">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <input id="searchInput" class="search" placeholder="Cari produk..." aria-label="Cari produk">
+                <nav class="categories" id="categoryList" aria-label="Filter kategori">
+                    <!-- kategori dinamis -->
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1 class="enter-from-left">Jual Produk Digital yang Keren. Cepat. Rapi.</h1>
+                    <p class="enter-from-left delay-100">Preview, demo, lalu pembeli diarahkan langsung ke checkout Lynk.id. Gak perlu ribet bikin sistem pembayaran.</p>
+                    <div class="hero-cta enter-from-left delay-200">
+                        <a href="#catalog" class="btn">Lihat Produk</a>
+                        <a href="#how" class="btn ghost">Cara Kerja</a>
+                    </div>
+                </div>
+                <div class="hero-illustration enter-from-right">
+                    <div class="illustration">
+                        <i class="fas fa-" style="font-size: 5rem; color: var(--accent);"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalog" class="catalog">
+            <div class="container">
+                <h2 class="section-title">Katalog Produk</h2>
+                <p class="section-sub">Klik produk untuk lihat preview dan detail. Semua pembelian diarahkan ke Lynk.id.</p>
+
+                <div id="productGrid" class="product-grid">
+                    <!-- product cards di-inject lewat JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="how" class="how">
+            <div class="container">
+                <h2 class="section-title">Bagaimana Cara Kerjanya?</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Preview Produk</h3>
+                        <p>Lihat preview dan demo produk sebelum membeli</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Beli via Lynk.id</h3>
+                        <p>Klik tombol beli dan diarahkan ke checkout Lynk.id</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>Dapatkan Produk</h3>
+                        <p>Setelah pembayaran, file langsung bisa diunduh</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>© <span id="year"></span> DigitalStore. All rights reserved.</div>
+            <div class="socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
